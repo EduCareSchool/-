@@ -1715,23 +1715,6 @@
             });
         });
 
-        // Проверка доступности файла
-        function checkFileAvailability() {
-            fetch('EduCationHub_v1.0.apk')
-                .then(response => {
-                    if (response.ok) {
-                        console.log('APK файл доступен для скачивания');
-                    } else {
-                        console.log('APK файл не найден');
-                    }
-                })
-                .catch(error => {
-                    console.log('Ошибка при проверке файла:', error);
-                });
-        }
-
-        // Вызовите при загрузке страницы
-        document.addEventListener('DOMContentLoaded', checkFileAvailability);
     </script>
 </body>
 </html>
